@@ -1,0 +1,147 @@
+/* 
+	General Page Styles 
+*/
+body {
+  font: 12px sans-serif;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+#scplot {
+  background-color: #e0e0e0;
+  width: 1030px;
+  height: 725px; 
+  /*height: 650px; */
+}
+
+#SC .axis { font-size: 1.5em; }
+
+#DROP rect {
+  fill: #74c476; 
+  stroke: #2ca02c;
+  stroke-width: 3;
+  stroke-opacity:0.6;
+}
+#DROP rect:hover {
+  opacity: 0.5;
+}
+
+.bar.positive {
+  fill: steelblue;
+}
+.bar.negative {
+  fill: brown;
+}
+.bar.posChanged {
+  fill: steelblue;
+  stroke: black;
+  stroke-width: 2;
+}
+.bar.negChanged {
+  fill: brown;
+  stroke: black;
+  stroke-width: 2;
+}
+.dummy.dragBarTop {
+  fill: black;
+  opacity: 0.1;
+  cursor: ew-resize; 
+}
+
+.errorbar {
+  stroke: black;
+  stroke-width: 2;
+  opacity: 1;
+}
+
+td, th {
+  padding: 1px 4px;
+  word-wrap:break-word;
+}
+th {
+  white-space: nowrap;
+}
+table {
+  font: 14px sans-serif;
+  border-collapse:collapse; 
+  table-layout:fixed; 
+  width: 360px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0.5em 0em 0.5em 0em;
+  width: 100%; }
+  ul li {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0em;
+    padding: 0em 1em; }
+
+circle {
+  fill: #1f77b4;
+  stroke: #1f77b4;
+  fill-opacity: 0.2;
+  stroke-width: 1.2px;
+  stroke-opacity: 0.5;
+  cursor: move; }
+  circle.dropped {
+    fill: #2ca02c;
+    stroke: #2ca02c; 
+    fill-opacity: 1;}
+  circle.highlighted {
+    fill: #2ca02c;
+    stroke: black;
+    stroke-width: 2.5px; 
+    fill-opacity: 1;}
+  circle:hover {
+    stroke: black; 
+    stroke-width: 2.5px;
+    fill-opacity: 1;}
+
+#pcplot {
+  background-color: #efefef;
+  /*width: 960px;*/
+  /*height: 300px; */
+}
+
+#pcplot .axis { font-size: 1.3em; }
+
+
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.foreground path {
+  fill: none;
+  stroke: steelblue;
+}
+
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  cursor: move;
+}
+
+.button {
+  width:400px;
+  height:40px;
+}
